@@ -1,0 +1,7 @@
+cd .. && sls create --name auth-service --template-url https://github.com/codingly-io/serverless-auth0-authorizer
+cd auth-service
+npm install
+
+create a file name "secret.pem" and pate Application Certificates to it
+
+sls deploy --verbose --stage dev
